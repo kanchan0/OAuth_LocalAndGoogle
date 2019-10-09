@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OAuth Tutorials</title>
+        <style>
+            body{
+                font-family: arial;
+                margin: 0;
+                background-color: #cfa57b;
+            }
+            nav{
+                background: #082e02;
+                padding: 20px 10px;
+            }
+            nav ul{
+                max-width: 960px;
+                margin: auto;
+                padding:0;
+            }
+            nav li{
+                
+                list-style-type: none;
+                display: inline-block;
+                margin: 0 10px 20 0;
+            }
+            nav a{
+                color: #fff;
+                font-size: 18px;
+                background: rgba(25, 26, 1, 0.041);
+                text-decoration: none;
+                padding: 20px;
+                display: block;
+            }
+            main, header{
+                max-width: 960px;
+                margin: 45px auto;
+                padding: 0 10px;
+                color: #333;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a href="/">Homepage</a></li>
+                <% if(user){ %>
+                <li><a href="/auth/logout">Logout</a></li>
+                <% } else { %>
+                <li><a href="/auth/login">Login</a></li>
+                <li> OR</li>
+                <li><a href="/signup">SignUp</a></li>
+                <% } %>
+               
+                <li><a href="/profile">Profile</a></li>
+                
+            </ul>
+        </nav>
+       
+        <header>
+            <h1>Passportjs and Cookie-Session</h1>
+        </header>
+
+        <main>
+                <div class="home" >   
+                        <h2>Simple, unobtrusive authentication for Node.js</h2>
+                          </div>
+                        </div>
+                        <p>Passport is authentication middleware for Node.js.
+                                 Extremely flexible and modular, Passport can be unobtrusively dropped in to any
+                                 express-based web application.  A comprehensive set of
+                                 strategies support authentication using a username and password,
+                                 Facebook,Twitter, and more
+                                </p>
+                      </div>
+             </main>
+    </body>
+</html>
